@@ -79,9 +79,6 @@ public class FilesStorageServiceImpl implements FilesStorageService {
   }
 
 
-
-
-
   /* Files.walk() 方法會遞迴地遍歷指定目錄，並返回一個包含所有檔案和目錄路徑的 Stream。
    filter() 方法會過濾掉指定目錄本身的路徑。
    map() 方法會將所有檔案和目錄路徑轉換為相對於指定目錄的相對路徑。*/
@@ -101,7 +98,4 @@ public class FilesStorageServiceImpl implements FilesStorageService {
     return lastFile.orElse(null);
   }
 
-
-
 }
-
